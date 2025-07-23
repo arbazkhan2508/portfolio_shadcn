@@ -1,0 +1,32 @@
+my-portfolio/
+│
+├── app/                    # Next.js 13+ App Router
+│   ├── layout.tsx         # Global layout
+│   ├── page.tsx           # Home (Hero, Projects Preview, Contact CTA)
+│   ├── about/page.tsx     # About Me
+│   ├── projects/page.tsx  # Projects list/grid
+│   ├── contact/page.tsx   # Contact form
+│   └── globals.css        # Tailwind base + custom styles
+│
+├── components/            # Reusable UI components
+│   ├── layout/            # Navbar, Footer, ThemeToggle, etc.
+│   ├── ui/                # Auto-managed ShadCN components
+│   ├── sections/          # HeroSection, AboutSection, ProjectSection, etc.
+│   └── cards/             # ProjectCard, SkillCard, etc.
+│
+├── lib/                   # Utility helpers (e.g., seo.ts, email.ts, format.ts)
+│
+├── config/                # Site config, shadcn config, theme config
+│
+├── constants/             # Navigation links, social links, skills, projects data
+│
+├── public/                # Static assets (images, favicons)
+│
+├── styles/                # Optional: animations, custom fonts, overrides
+│
+├── tailwind.config.ts     # Tailwind config
+├── postcss.config.js      # PostCSS config
+├── tsconfig.json          # TypeScript config
+├── next.config.js         # Next.js config
+├── README.md
+└── package.json
