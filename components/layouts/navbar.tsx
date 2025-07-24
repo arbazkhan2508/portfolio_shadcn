@@ -36,26 +36,25 @@ export const Navbar1 = () => {
 
 export const Navbar = () => {
     return (
-        <header className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-zinc-200 dark:border-zinc-700 px-6 py-3 shadow-md flex items-center justify-between">
-
+        <header className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl rounded-full bg-header-bg border border-header-border backdrop-blur-md px-6 py-3 shadow-md flex items-center justify-between">
             {/* Left: Avatar */}
             <Link href="/" className="flex items-center gap-2">
                 <Avatar className="h-8 w-8">
                     <AvatarImage src="/Arbaz_Circle_img.png" alt="Arbaz" />
                     <AvatarFallback>AR</AvatarFallback>
                 </Avatar>
-                <span className="font-semibold text-sm text-zinc-700 dark:text-zinc-200">Arbaz</span>
+                <span className="font-semibold text-sm text-header-text">Arbaz</span>
             </Link>
 
             {/* Center: Nav Links */}
             <nav className="hidden md:flex items-center gap-6">
-                {navItems.map((item) => (
+                {navItems?.map((item) => (
                     <a
-                        key={item.href}
-                        href={item.href}
-                        className="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white transition-colors"
+                        key={item?.href}
+                        href={item?.href}
+                        className="text-sm font-medium text-header-text hover:text-header-hover-text transition-colors"
                     >
-                        {item.label}
+                        {item?.label}
                     </a>
                 ))}
             </nav>

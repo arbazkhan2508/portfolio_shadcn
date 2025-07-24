@@ -49,8 +49,8 @@ export default function Footer() {
             <div className="flex w-full mt-10 items-center justify-between max-w-7xl mx-auto gap-8  relative z-10">
                 {/* Name badge */}
                 <div className="left-6 z-10">
-                    <p className="text-black bg-white px-6 py-2 rounded-full font-serif text-lg">
-                        Jesse Showalter
+                    <p className={`${playfair?.className}  italic bg-header-bg text-header-text px-6 py-2 rounded-full text-lg`}>
+                        Arbaz Khan
                     </p>
                 </div>
                 <IconButton icon={<Youtube className='w-5 h-5' />} />

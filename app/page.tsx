@@ -1,5 +1,5 @@
 // app/page.tsx
-import Footer from "@/components/layouts/Footer";
+import AboutSection from "@/components/sections/AboutSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
@@ -11,9 +11,8 @@ export default function HomePage() {
       <HeroSection />
       <ExperienceSection />
       <ProjectsSection />
+      <AboutSection />
       <SkillsSection />
-      <div className="w-full h-32"></div>
-      <Footer />
     </main>
   );
 }

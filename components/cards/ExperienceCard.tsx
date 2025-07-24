@@ -13,7 +13,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     company,
     duration,
     responsibilities,
-    bgColor = "#f3f4f6", // fallback
+    bgColor = 'var(--expCard1bg)',
 }) => {
     return (
         <div
