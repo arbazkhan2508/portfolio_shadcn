@@ -8,6 +8,7 @@ import {
     Music2,
     ArrowUpRight,
 } from 'lucide-react';
+import HeaderWithLine from '../global/HeaderWithLine';
 
 export default function Footer() {
     return (
@@ -15,16 +16,7 @@ export default function Footer() {
             {/* /// <footer className="w-full h-screen bg-[radial-gradient(ellipse_at_top_left,_#2e2e2e,_#000000)] text-white py-24 px-4 text-center overflow-hidden flex flex-col items-center justify-center gap-12"> */}
 
             {/* "I'm available" line */}
-            <div className="flex items-center justify-center w-full">
-                {/* Left line */}
-                <div className="h-px w-24 bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
-
-                {/* Text */}
-                <p className={`${playfair?.className} text-tertiary-foreground italic text-xl font-medium`}>I'm available</p>
-
-                {/* Right line */}
-                <div className="h-px w-24 bg-gradient-to-r from-transparent via-gray-500 to-transparent rotate-180"></div>
-            </div>
+            <HeaderWithLine title="I'm available" />
 
             <div className='w-full flex flex-col items-center justify-center gap-4 lg:gap-7'>
                 {/* Heading */}

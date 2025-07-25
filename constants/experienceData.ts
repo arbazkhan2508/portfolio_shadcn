@@ -7,6 +7,7 @@ export const experienceData = [
         responsibilities: [
             "Developed and optimized scalable React.js applications.",
             "Collaborated with UI/UX and backend teams to enhance performance and responsiveness.",
+            "Collaborated with UI/UX and backend teams to enhance performance and responsiveness.",
         ],
     },
     {
@@ -16,6 +17,7 @@ export const experienceData = [
         responsibilities: [
             "Worked on maintaining and improving scalable web applications.",
             "Contributed to better UI/UX and application structure.",
+            "Contributed to better UI/UX and application structure.",
         ],
     },
     {
@@ -24,6 +26,7 @@ export const experienceData = [
         duration: "Sept 2023 – Dec 2024",
         responsibilities: [
             "Worked on maintaining and improving scalable web applications.",
+            "Contributed to better UI/UX and application structure.",
             "Contributed to better UI/UX and application structure.",
         ],
     },
