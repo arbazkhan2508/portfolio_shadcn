@@ -2,6 +2,7 @@ import React from 'react';
 import { ExperienceCard } from '../cards/ExperienceCard';
 import { experienceData } from '@/constants/experienceData';
 import SectionHeader from '../global/SectionHeader';
+import { CometCard } from '../ui/comet-card';
 
 const ExperienceSection = () => {
     const bgVariables = [
@@ -15,11 +16,15 @@ const ExperienceSection = () => {
             <SectionHeader title="Experience" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mx-auto">
                 {experienceData?.slice(0, 3)?.map((item, index) => (
-                    <ExperienceCard
+                    <CometCard
                         key={index}
-                        bgColor={bgVariables[index % bgVariables?.length]}
-                        {...item}
-                    />
+                    >
+                        <ExperienceCard
+                            key={index}
+                            bgColor={bgVariables[index % bgVariables?.length]}
+                            {...item}
+                        />
+                    </CometCard>
                 ))}
             </div>
         </section>

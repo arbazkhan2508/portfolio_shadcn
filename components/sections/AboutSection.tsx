@@ -26,7 +26,7 @@ export const AboutSection = () => {
     const ref = useRef(null)
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ['start 0.1', 'end 0.2'], // triggers when top hits 70% of viewport
+        offset: ['start 0.5', 'end 0.2'], // triggers when top hits 70% of viewport
     })
 
     const words = headingText.split(' ')

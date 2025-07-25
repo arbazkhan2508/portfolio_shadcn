@@ -1,4 +1,5 @@
 // app/page.tsx
+import { CometCardDemo } from "@/components/cards/CometCardDemo";
 import AboutSection from "@/components/sections/AboutSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import { FindMeSection } from "@/components/sections/FindMeSection";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <ExperienceSection />
       <ProjectsSection />
       <SkillsSection />
+      {/* <CometCardDemo /> */}
       <AboutSection />
       <FindMeSection />
     </main>
